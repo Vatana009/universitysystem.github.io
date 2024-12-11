@@ -1,0 +1,214 @@
+* {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Battambang', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7fa;
+    color: #333;
+    background-image: url(../asset/background.avif);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+header {
+    background: #1e293b;
+    color: #fff;
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.container {
+    max-width: 800px;
+    margin: 100px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.register-btn {
+    padding: 10px 20px;
+    background: #3b82f6;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background 0.3s, transform 0.2s;
+    margin-left: 20px;
+}
+
+.register-btn:hover {
+    background: #2563eb;
+    transform: scale(1.05);
+}
+
+
+.nav {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.nav img {
+    border-radius: 50%;
+}
+
+.logo {
+    height: 100px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.1rem;
+    align-items: center;
+    padding: 20px 15px;
+    border-radius: 5px;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #3b82f6;
+    background: black;
+}
+
+h1,
+h2 {
+    font-size: 2rem;
+    color: #1e293b;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.scholarship-form {
+    display: grid;
+    gap: 15px;
+}
+
+.scholarship-form label {
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.scholarship-form input,
+.scholarship-form textarea,
+.scholarship-form select {
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border 0.3s ease;
+}
+
+.scholarship-form input:focus,
+.scholarship-form textarea:focus,
+.scholarship-form select:focus {
+    border-color: #2563eb;
+}
+
+.scholarship-form textarea {
+    resize: vertical;
+}
+
+.btn {
+    padding: 12px;
+    font-size: 1.1rem;
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #3b82f6;
+}
+
+::placeholder {
+    font-family: Battambang;
+}
+
+option {
+    font-family: Battambang;
+}
+
+button {
+    font-family: Battambang;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #1e293b;
+    color: #fff;
+    position: sticky;
+}
+
+.footer p{
+    font-size: 0.91rem;
+}
+
+@media screen and (max-width: 580px){
+    .nav-links {
+        display: flex;
+    }
+
+
+    .nav img {
+        width: 40px;
+        height: auto;
+    }
+
+    .nav-links li a {
+        font-size: 7px;
+        padding: 7px;
+    }
+
+    .register-btn {
+        font-size: 8px;
+    }
+
+    .image img {
+        width: 300px;
+        height: auto;
+    }
+
+    .image {
+        text-align: center;
+        align-items: center;
+    }
+
+    .container p {
+        font-size: 15px;
+        color: black;
+    }
+
+    .container ol li {
+        font-size: 15px;
+        color: black;
+    }
+
+    .container h2 {
+        font-size: 20px;
+    }
+}

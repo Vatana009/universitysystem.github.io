@@ -1,0 +1,384 @@
+* {
+    scroll-behavior: smooth;
+}
+
+/* General Reset */
+body,
+h1,
+h2,
+p,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Battambang', 'Poppins', sans-serif;
+    line-height: 1.6;
+    background: linear-gradient(#0D98BA, #5DD6F4, #7D7098);
+    background-image: url(../asset/background.avif);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* Header Styles */
+header {
+    background: #1e293b;
+    color: #fff;
+    padding: 10px 20px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+}
+
+/* Register Button */
+.register-btn {
+    padding: 10px 20px;
+    background: #3b82f6;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background 0.3s, transform 0.2s;
+    margin-left: 20px;
+}
+
+.register-btn:hover {
+    background: #2563eb;
+    transform: scale(1.05);
+}
+
+/* Mobile Adjustment */
+@media (max-width: 768px) {
+    .register-btn {
+        display: none;
+        /* Hide button for small screens (can toggle in JS) */
+    }
+}
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container img {
+    border-radius: 50%;
+}
+
+.logo {
+    height: 100px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    padding: 20px 15px;
+    border-radius: 5px;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #3b82f6;
+    background: black;
+}
+
+.mobile-menu-toggle {
+    display: none;
+}
+
+.text-header {
+    color: black;
+    font-size: 20px;
+    text-align: center;
+    margin: 50px;
+}
+
+.text-header h1 {
+    margin-top: 50px;
+    font-size: 50px;
+    color: blue;
+}
+
+.school {
+    background: #9A9AEB;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(17, 17, 17, 0.2);
+    padding: 25px;
+    width: 500px;
+    text-align: start;
+    font-size: 25px;
+    margin: 20px;
+}
+
+.image {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+.text-top {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.text-bottom {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.image img {
+    width: 900px;
+    height: 500px;
+    border-radius: 5%;
+}
+
+
+.cta-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #3b82f6;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.cta-button:hover {
+    background: #2563eb;
+}
+
+/* Section Styles */
+section {
+    padding: 60px 20px;
+}
+
+.contact {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.icon {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon a {
+    display: inline-block;
+    transition: transform 0.3s ease, fill 0.3s ease;
+}
+
+.icon a svg {
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+    fill: #000; /* Default black color */
+    transition: fill 0.3s ease, transform 0.3s ease;
+}
+
+.icon a:hover svg {
+    fill: blue; /* Hover color blue */
+    transform: scale(1.2); /* Slightly increase size on hover */
+}
+
+.contact h2 {
+    text-align: center;
+    color: blue;
+    margin-bottom: 20px;
+}
+
+.about {
+    align-items: center;
+    text-align: center;
+}
+
+.about p {
+    background: #9A9AEB;
+    text-align: center;
+    border-radius: 3px;
+    padding: 20px;
+    color: black;
+    font-size: 20px;
+}
+
+.about h2 {
+    color: blue;
+    padding: 20px;
+}
+
+/* Program Cards */
+.program-cards {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: #f8f9fa;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+}
+
+.cards h2 {
+    text-align: center;
+    padding: 20px;
+    color: blue;
+}
+
+.card h3 {
+    margin-bottom: 10px;
+    color: #1e293b;
+}
+
+::placeholder {
+    font-family: Battambang;
+}
+
+button {
+    font-family: Battambang;
+}
+
+/* Contact Form */
+form input,
+form textarea,
+form button {
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    align-items: center;
+}
+
+form button {
+    background: #3b82f6;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+form button:hover {
+    background: #2563eb;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #1e293b;
+    color: white;
+}
+
+@media screen and (max-width: 580px) {
+
+    .nav-links {
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+
+    .container img {
+        width: 40px;
+        height: auto;
+    }
+
+    .nav-links li a {
+        font-size: 10px;
+        padding: 7px;
+    }
+
+
+    .image img {
+        width: 300px;
+        height: auto;
+    }
+
+    .contact {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .container p {
+        font-size: 15px;
+        color: black;
+    }
+
+    .container ul li {
+        font-size: 15px;
+    }
+
+    .text-header {
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .text-header h1 {
+        font-size: 30px;
+    }
+
+    .text-top {
+        position: relative;
+        left: 0;
+    }
+
+    .text-top img {
+        width: 300px;
+        height: auto;
+        align-items: center;
+        margin: auto;
+    }
+
+    .school {
+        font-size: 16px;
+        width: auto;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .icon {
+        padding: 5px;
+    }
+
+
+}
